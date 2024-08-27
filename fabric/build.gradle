@@ -20,25 +20,23 @@ configurations {
 }
 
 repositories {
-    maven { url = "https://jitpack.io" } // Fabric ASM
     maven {
-        // location of the maven that hosts JEI files since January 2023
-        name = "Jared's maven"
-        url = "https://maven.blamejared.com/"
+        name = "Greenhouse Maven"
+        url = 'https://repo.greenhouse.house/releases/'
     }
-    repositories {
-        maven { url "https://maven.ryanliptak.com/" }
-    }
+//  maven { url "https://mvn.devos.one/releases/" } // Porting Lib
     maven {
-        // location of a maven mirror for JEI files, as a fallback
-        name = "ModMaven"
-        url = "https://modmaven.dev"
+        name = "Greenhouse Maven (Snapshots)" // Temporary Porting Lib Fork for 1.21
+        url = 'https://repo.greenhouse.house/snapshots/'
     }
     maven {
-        url "https://cursemaven.com"
+        url "https://jitpack.io/" // Fabric ASM
         content {
-            includeGroup "curse.maven"
+            excludeGroup "io.github.fabricators_of_create"
         }
+    }
+    maven {
+        url = "https://api.modrinth.com/maven"
     }
 }
 
@@ -52,16 +50,19 @@ dependencies {
     // modApi "dev.architectury:architectury-fabric:${rootProject.architectury_version}"
 
     // compile against the JEI API but do not include it at runtime
-    modCompileOnlyApi("mezz.jei:jei-1.21-common-api:19.8.2.99")
-    modCompileOnlyApi("mezz.jei:jei-1.21-fabric-api:19.8.2.99")
+//    modCompileOnlyApi("mezz.jei:jei-1.21-common-api:19.8.2.99")
+//    modCompileOnlyApi("mezz.jei:jei-1.21-fabric-api:19.8.2.99")
     // at runtime, use the full JEI jar for Fabric
-    modRuntimeOnly("mezz.jei:jei-1.21-fabric:19.8.2.99")
+//    modRuntimeOnly("mezz.jei:jei-1.21-fabric:19.8.2.99")
 
-    compileOnly "squeek.appleskin:appleskin-fabric:mc1.21-3.0.5:api"
-    runtimeOnly "squeek.appleskin:appleskin-fabric:mc1.21-3.0.5"
+//    compileOnly "squeek.appleskin:appleskin-fabric:mc1.21-3.0.5:api"
+//    runtimeOnly "squeek.appleskin:appleskin-fabric:mc1.21-3.0.5"
 
-    implementation "curse.maven:farmersdelight-993166:5664323"
-    implementation "curse.maven:eternalstarlight-1080592:5664709"
+    modImplementation("vectorwing:FarmersDelight:${fdrf}+refabricated") {
+        exclude(group: "net.fabricmc")
+    }
+
+    modImplementation "maven.modrinth:eternal-starlight:$starlight+fabric"
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
