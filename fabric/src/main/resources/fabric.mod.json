@@ -1,30 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
-  "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "id": "eternalsdelight",
+  "version": "0.1.0",
+  "name": "Eternal Sdelight",
+  "description": "An addon for Eternal Starlight and farmer's delight.",
   "authors": [
-    "Me!"
+    "LeoMCM"
   ],
-  "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
-  },
-  "license": "Insert License Here",
-  "icon": "assets/examplemod/icon.png",
+  "license": "MIT",
+  "icon": "assets/eternalsdelight/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "ho.artisan.examplemod.fabric.ExampleModFabric"
+      "com.cloudmeow.eternalsdelight.fabric.EternalSdelightFabric"
     ]
   },
   "depends": {
     "fabric": "*",
-    "minecraft": ">=1.20.5",
-    "architectury": "*"
+    "minecraft": ">=1.21"
   },
   "mixins": [
-    "examplemod.fabric.mixins.json", "examplemod.common.mixins.json"
+
   ]
 }

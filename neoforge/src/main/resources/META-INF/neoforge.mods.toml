@@ -1,41 +1,41 @@
 modLoader = "javafml"
-loaderVersion = "[1,)"
+loaderVersion = "*"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "MIT"
 
 [[mods]]
-modId = "examplemod"
-version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
+modId = "eternalsdelight"
+version = "0.1.0"
+displayName = "Eternal Sdelight"
+authors = "LeoMCM"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+An addon for Eternal Starlight and farmer's delight.
 '''
-#logoFile = ""
+logoFile = "assets/eternalsdelight/icon.png"
 
 [[mixins]]
-config = "examplemod.neoforge.mixins.json"
+
 
 [[mixins]]
-config = "examplemod.common.mixins.json"
 
-[[dependencies.examplemod]]
+
+[[dependencies.eternalsdelight]]
 modId = "neoforge"
-mandatory = true
+type="required"
 versionRange = "[20,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.eternalsdelight]]
 modId = "minecraft"
-mandatory = true
-versionRange = "[1.20.2,)"
+type="required"
+versionRange = "[1.21,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
-modId = "architectury"
-mandatory = true
-versionRange = "*"
-ordering = "AFTER"
-side = "BOTH"
+[[dependencies.eternalsdelight]]
+modId="farmersdelight"
+type="required"
+versionRange="1.21-1.2.4"
+ordering="NONE"
+side="BOTH"
