@@ -39,3 +39,10 @@ type="required"
 versionRange="1.21-1.2.4"
 ordering="NONE"
 side="BOTH"
+
+[[dependencies.eternalsdelight]]
+modId="eternal_starlight"
+type="required"
+versionRange="1.21-0.1.7"
+ordering="NONE"
+side="BOTH"

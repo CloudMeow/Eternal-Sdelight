@@ -1,6 +1,6 @@
-package com.cloudmeow.eternalsdelight.common.platform;
+package cn.leolezury.eternalsdelight.common.platform;
 
-import com.cloudmeow.eternalsdelight.common.platform.registry.RegistrationProvider;
+import cn.leolezury.eternalsdelight.common.platform.registry.RegistrationProvider;
 import net.minecraft.Util;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;

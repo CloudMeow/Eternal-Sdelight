@@ -1,9 +1,9 @@
-package com.cloudmeow.eternalsdelight.common.registry;
+package cn.leolezury.eternalsdelight.common.registry;
 
-import com.cloudmeow.eternalsdelight.common.EternalSdelight;
-import com.cloudmeow.eternalsdelight.common.platform.ESDPlatform;
-import com.cloudmeow.eternalsdelight.common.platform.registry.RegistrationProvider;
-import com.cloudmeow.eternalsdelight.common.platform.registry.RegistryObject;
+import cn.leolezury.eternalsdelight.common.EternalSdelight;
+import cn.leolezury.eternalsdelight.common.platform.ESDPlatform;
+import cn.leolezury.eternalsdelight.common.platform.registry.RegistrationProvider;
+import cn.leolezury.eternalsdelight.common.platform.registry.RegistryObject;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
 

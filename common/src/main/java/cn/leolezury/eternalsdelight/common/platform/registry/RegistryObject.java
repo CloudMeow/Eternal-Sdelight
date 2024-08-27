@@ -1,4 +1,4 @@
-package com.cloudmeow.eternalsdelight.common.platform.registry;
+package cn.leolezury.eternalsdelight.common.platform.registry;
 
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceKey;

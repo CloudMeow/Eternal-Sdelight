@@ -1,7 +1,7 @@
-package com.cloudmeow.eternalsdelight.common;
+package cn.leolezury.eternalsdelight.common;
 
-import com.cloudmeow.eternalsdelight.common.registry.ESDCreativeModeTabs;
-import com.cloudmeow.eternalsdelight.common.registry.ESDItems;
+import cn.leolezury.eternalsdelight.common.registry.ESDCreativeModeTabs;
+import cn.leolezury.eternalsdelight.common.registry.ESDItems;
 import net.minecraft.resources.ResourceLocation;
 
 public class EternalSdelight {

@@ -12,12 +12,14 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.cloudmeow.eternalsdelight.fabric.EternalSdelightFabric"
+      "cn.leolezury.eternalsdelight.fabric.EternalSdelightFabric"
     ]
   },
   "depends": {
     "fabric": "*",
-    "minecraft": ">=1.21"
+    "minecraft": ">=1.21",
+    "farmersdelight": "*",
+    "eternal_starlight": "*"
   },
   "mixins": [
 

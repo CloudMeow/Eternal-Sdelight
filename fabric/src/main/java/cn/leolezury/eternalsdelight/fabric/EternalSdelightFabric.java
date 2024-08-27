@@ -1,6 +1,6 @@
-package com.cloudmeow.eternalsdelight.fabric;
+package cn.leolezury.eternalsdelight.fabric;
 
-import com.cloudmeow.eternalsdelight.common.EternalSdelight;
+import cn.leolezury.eternalsdelight.common.EternalSdelight;
 import net.fabricmc.api.ModInitializer;
 
 public class EternalSdelightFabric implements ModInitializer {

@@ -1,9 +1,9 @@
-package com.cloudmeow.eternalsdelight.neoforge.platform;
+package cn.leolezury.eternalsdelight.neoforge.platform;
 
-import com.cloudmeow.eternalsdelight.common.platform.ESDPlatform;
-import com.cloudmeow.eternalsdelight.common.platform.registry.RegistrationProvider;
-import com.cloudmeow.eternalsdelight.common.platform.registry.RegistryObject;
-import com.cloudmeow.eternalsdelight.common.registry.ESDItems;
+import cn.leolezury.eternalsdelight.common.platform.ESDPlatform;
+import cn.leolezury.eternalsdelight.common.platform.registry.RegistrationProvider;
+import cn.leolezury.eternalsdelight.common.platform.registry.RegistryObject;
+import cn.leolezury.eternalsdelight.common.registry.ESDItems;
 import com.google.auto.service.AutoService;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
