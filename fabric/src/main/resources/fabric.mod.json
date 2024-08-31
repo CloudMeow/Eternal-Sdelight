@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "eternalsdelight",
+  "version": "0.1.0",
+  "name": "Eternal Sdelight",
+  "description": "An addon for Eternal Starlight and farmer's delight.",
+  "authors": [
+    "LeoMCM"
+  ],
+  "license": "MIT",
+  "icon": "assets/eternalsdelight/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "cn.leolezury.eternalsdelight.fabric.EternalSdelightFabric"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.21",
+    "farmersdelight": "*",
+    "eternal_starlight": "*"
+  },
+  "mixins": [
+
+  ]
+}

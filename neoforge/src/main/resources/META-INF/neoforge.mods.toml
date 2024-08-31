@@ -1,0 +1,48 @@
+modLoader = "javafml"
+loaderVersion = "*"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "eternalsdelight"
+version = "0.1.0"
+displayName = "Eternal Sdelight"
+authors = "LeoMCM"
+description = '''
+An addon for Eternal Starlight and farmer's delight.
+'''
+logoFile = "assets/eternalsdelight/icon.png"
+
+[[mixins]]
+
+
+[[mixins]]
+
+
+[[dependencies.eternalsdelight]]
+modId = "neoforge"
+type="required"
+versionRange = "[20,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.eternalsdelight]]
+modId = "minecraft"
+type="required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.eternalsdelight]]
+modId="farmersdelight"
+type="required"
+versionRange="1.21-1.2.4"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.eternalsdelight]]
+modId="eternal_starlight"
+type="required"
+versionRange="1.21-0.1.7"
+ordering="NONE"
+side="BOTH"
