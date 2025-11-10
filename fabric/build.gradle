@@ -22,7 +22,7 @@ configurations {
 repositories {
     maven {
         name = "Greenhouse Maven"
-        url = 'https://repo.greenhouse.house/releases/'
+        url = 'https://maven.greenhouse.lgbt/releases/'
     }
 //  maven { url "https://mvn.devos.one/releases/" } // Porting Lib
     maven {
@@ -36,7 +36,7 @@ repositories {
         }
     }
     maven {
-        url = "https://api.modrinth.com/maven"
+        url "https://cursemaven.com"
     }
 }
 
@@ -62,7 +62,7 @@ dependencies {
         exclude(group: "net.fabricmc")
     }
 
-    modImplementation "maven.modrinth:eternal-starlight:$starlight+fabric"
+    modImplementation "curse.maven:eternal-starlight-1080592:${starlight}"
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }

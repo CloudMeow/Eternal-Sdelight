@@ -51,8 +51,8 @@ repositories {
 dependencies {
     neoForge "net.neoforged:neoforge:${rootProject.neoforge_version}"
 
-    implementation "curse.maven:farmersdelight-398521:5566383"
-    implementation "curse.maven:eternalstarlight-1080592:5664712"
+    implementation "curse.maven:farmersdelight-398521:6917256"
+    implementation "curse.maven:eternalstarlight-1080592:7125945"
 
     // compile against the JEI API but do not include it at runtime
     compileOnly("mezz.jei:jei-1.21-common-api:19.8.2.99")
